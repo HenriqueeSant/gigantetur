@@ -5,23 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastre-se</title>
     <link rel="stylesheet" href="cadastro.css">
-    <script src="cadastro.js"></script>
+    <link rel="shortcut icon" href="logo2.png" type="image/x-icon">
 </head>
 </html>
 
-<body>
-    <h1> Bem vindo a página de inscrição e cadastro da nossa empresa!</h1> 
-    <h2> Preencha o formulário abaixo para se cadastrar no nosso site.</h2><br />
+<body> 
+      <h1 style="text-align: center; "> Bem vindo a página de inscrição e cadastro da nossa empresa!</h1>
+      <h2 style="text-align: center;font-size:23px"> Preencha o formulário abaixo para se cadastrar no nosso site.</h2><br/>
+   
   
   <form action="Script_do_Formulario.php" method="post">
   
   <!-- DADOS PESSOAIS-->
+ <style>
+  body{
+    background-color:#bae3fc28;
+  }
+ </style>
   <fieldset>
-   <legend>Dados Pessoais</legend>
-   <table cellspacing="10">
+   <legend style="margin: 10px;">Dados Pessoais</legend>
+   <table cellspacing="12">
     <tr>
      <td>
-      <label for="nome">Nome: </label>
+      <label for="nome">Nome:</label>
      </td>
      <td align="left">
         <input type="text" name="email">
@@ -46,7 +52,6 @@
       <tr>
         <td>
          <label>CPF:</label>
-        </td>
         <td align="left">
          <input type="text" name="cpf" size="9" maxlength="9"> - <input type="text" name="cpf2" size="2" maxlength="2">
         </td>
@@ -56,8 +61,8 @@
      <br />
      <!-- DADOS DE LOGIN -->
 <fieldset>
-    <legend>Dados de login</legend>
-    <table cellspacing="10">
+  <legend>Dados de login</legend>
+    <table cellspacing="12">
      <tr>
       <td>
        <label for="email">E-mail: </label>
@@ -101,14 +106,14 @@
      </tr>
     </table>
    </fieldset>
-   <br />
-<!--botão de enviar: js-->
-   <button onclick="msg()">Teste</button>
-   <div id="mensagem">Muito Obrigado por sua Mensagem!</div>
+   <br/>
+   <!--botão de enviar: js-->
+   <button onclick="msg()">Enviar</button>
+   <div id="mensagem"></div>
 <!--acaba aqui-->
+<br>
    <input type="reset" value="Limpar">
    </form>
-   
     </body>
    </html>
 </body>
